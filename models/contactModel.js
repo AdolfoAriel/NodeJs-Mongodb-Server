@@ -11,6 +11,12 @@ const contactSchema = mongoose.Schema({
         type: String,
         required: [true, "Please add the contact name"],   
     },
+    
+        lastname:{
+            type: String,
+            required: [true, "Please add your lastname"]
+        },
+    
     email: {
         type:String,
          required: [true, "Please add the contact email address"]
@@ -18,7 +24,8 @@ const contactSchema = mongoose.Schema({
     phone:  {
         type:String,
         required:[ true, "Please add the contact phone number"]
-    }
+    },
+    
 },{
     timestamps:true
 })
