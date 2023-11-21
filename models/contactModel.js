@@ -16,6 +16,11 @@ const contactSchema = mongoose.Schema({
             type: String,
             required: [true, "Please add your lastname"]
         },
+
+        bloodType:{
+            type: String,
+            required:[true, "Please add your bloodtype"]
+        }
     
     email: {
         type:String,
