@@ -9,7 +9,7 @@ const {
 } = require("../controllers/contactController");
 const validateToken = require("../middleware/validateTokenHandler");
 
-const mascota = perro;
+
 
 router.use(validateToken)
 router.route("/").get(getContacts).post(createContact);
